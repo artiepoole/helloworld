@@ -6,9 +6,9 @@ hello: src.c
 
 .PHONY: install
 install:
-	mkdir -p ./out
-	cp -p hello ./out/hello
-	chmod +x ./out/hello
+	mkdir -p $(DESTDIR)
+	cp -p hello $(DESTDIR)/hello
+	chmod +x $(DESTDIR)/hello
 
 .PHONY: clean
 clean:
