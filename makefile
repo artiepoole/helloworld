@@ -2,10 +2,15 @@
 all: hello
 
 hello: src.c
-	mkdir ./out
 	gcc -o hello src.c
-	mv hello ./out/hello
+
+.PHONY: install
+install:
+	mkdir -p ./out
+	cp -p hello ./out/hello
+	chmod +x ./out/hello
 
 .PHONY: clean
 clean:
+	rm hello
 	rm -rf out/
