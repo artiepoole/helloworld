@@ -1,4 +1,4 @@
-prefix = /usr/
+prefix = /usr
 
 .PHONY: all
 all: hello
@@ -10,8 +10,10 @@ hello: hello.c
 install:
 	install hello $(DESTDIR)$(prefix)/bin
 	install hello.1 $(DESTDIR)$(prefix)/share/man/man1
-
+	mkdir $(DESTDIR)$(prefix)/bin
+	mkdir $(DESTDIR)$(prefix)/share/man/man1
+	
 .PHONY: clean
 clean:
-	rm hello
+	rm -f hello
 
