@@ -1,8 +1,8 @@
 #!/bin/bash
-rm -rf hello_1.0
-mkdir hello_1.0
-cp hello.c hello_1.0/hello.c
-cp hello.1 hello_1.0/hello.1
-cp Makefile hello_1.0/Makefile
-tar Jcfv ../hello_1.0.orig.tar.xz hello_1.0
-rm -rf hello_1.0
+rm -rf hello_1.1
+mkdir hello_1.1
+cp hello.c hello_1.1/hello.c
+cp hello.1 hello_1.1/hello.1
+cp Makefile hello_1.1/Makefile
+tar Jcfv ../hello_1.1.orig.tar.xz hello_1.1
+rm -rf hello_1.1
